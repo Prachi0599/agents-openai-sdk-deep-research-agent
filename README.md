@@ -1,0 +1,81 @@
+# AI Deep Research Agent using OpenAI Agents SDK
+
+## Overview
+
+AI Deep Research Agent is a multi-agent research assistant built using the OpenAI Agents SDK. The system automates the process of researching a topic, gathering information from the web, generating structured reports, and delivering results through an interactive user interface.
+
+The project follows a modular multi-agent architecture where each agent is responsible for a specific task in the research workflow.
+
+---
+
+## Features
+
+* Multi-agent research workflow
+* Automated research planning
+* Web search and information gathering
+* AI-powered report generation
+* Interactive Gradio interface
+* Email report delivery
+* Structured outputs using Pydantic models
+* Modular and scalable architecture
+
+---
+
+## Tech Stack
+
+* Python
+* OpenAI Agents SDK
+* Gradio
+* SendGrid
+* Pydantic
+* AsyncIO
+
+---
+
+## Project Structure
+
+```text
+agents_OPENAI_SDK_DEEP_RESEARCH_AGENT/
+│
+├── app/
+├── core/
+├── research_agents/
+├── requirements.txt
+├── pyproject.toml
+└── README.md
+```
+
+---
+
+## Workflow
+
+1. User submits a research query.
+2. Planner Agent creates a research strategy.
+3. Search Agent gathers information from relevant sources.
+4. Writer Agent generates a structured report.
+5. Results are displayed through the user interface.
+6. Reports can be shared through email delivery.
+
+---
+
+## Current Status
+
+This project is currently being developed incrementally. Additional agents, orchestration workflows, and user interface enhancements will be added in upcoming updates.
+
+---
+
+## Future Improvements
+
+* Advanced research planning
+* Multi-source information aggregation
+* Citation generation
+* Report export functionality
+* Enhanced user experience
+* Support for additional AI models
+
+---
+
+## Author
+
+Prachi Bhapkar
+AI Engineer | Python Developer | Generative AI Enthusiast
