@@ -58,6 +58,22 @@ agents_OPENAI_SDK_DEEP_RESEARCH_AGENT/
 
 ---
 
+## Planner Agent
+
+The Planner Agent is the first component in the research workflow. It takes the user's research query and converts it into a structured research plan.
+
+### Responsibilities
+
+- Understand the user's research objective
+- Break a broad topic into smaller research questions
+- Generate a focused search strategy
+- Prepare the workflow for the Search Agent and Writer Agent
+
+The Planner Agent serves as the entry point of the multi-agent research workflow.
+This makes the research process more organized and helps the system produce better final reports.
+
+---
+
 ## Current Status
 
 This project is currently being developed incrementally. Additional agents, orchestration workflows, and user interface enhancements will be added in upcoming updates.
@@ -77,5 +93,5 @@ This project is currently being developed incrementally. Additional agents, orch
 
 ## Author
 
-Prachi Bhapkar
+Prachi Bhapkar |
 AI Engineer | Python Developer | Generative AI Enthusiast
