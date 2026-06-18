@@ -89,6 +89,21 @@ The Search Agent acts as the information gathering layer of the multi-agent rese
 
 ---
 
+## Writer Agent
+
+The Writer Agent is responsible for converting collected research information into a structured and readable report.
+
+### Responsibilities
+
+- Process research findings
+- Organize information into logical sections
+- Generate comprehensive reports
+- Produce clear and structured output
+
+The Writer Agent transforms raw research data into actionable insights for the end user.
+
+---
+
 ## Current Status
 
 This project is currently being developed incrementally. Additional agents, orchestration workflows, and user interface enhancements will be added in upcoming updates.
