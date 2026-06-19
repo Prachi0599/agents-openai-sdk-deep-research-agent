@@ -104,6 +104,22 @@ The Writer Agent transforms raw research data into actionable insights for the e
 
 ---
 
+## Research Manager
+
+The Research Manager is responsible for coordinating the complete multi-agent workflow.
+
+### Responsibilities
+
+- Run the Planner Agent to create a research strategy
+- Pass planned searches to the Search Agent
+- Collect and organize search results
+- Send gathered information to the Writer Agent
+- Manage the end-to-end research pipeline
+
+The Research Manager acts as the orchestration layer that connects all agents into a complete research system.
+
+---
+
 ## Current Status
 
 This project is currently being developed incrementally. Additional agents, orchestration workflows, and user interface enhancements will be added in upcoming updates.
