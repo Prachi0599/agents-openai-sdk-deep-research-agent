@@ -120,6 +120,27 @@ The Research Manager acts as the orchestration layer that connects all agents in
 
 ---
 
+## User Interface and Email Delivery
+
+### Gradio Interface
+
+The application provides an interactive Gradio-based user interface that allows users to submit research queries and receive generated reports.
+
+### Email Agent
+
+The Email Agent is responsible for delivering generated research reports through email.
+
+### Responsibilities
+
+- Format generated reports
+- Manage email delivery
+- Send research summaries to users
+- Integrate with SendGrid for reliable communication
+
+Together, the Gradio Interface and Email Agent provide the final user-facing layer of the system.
+
+---
+
 ## Current Status
 
 This project is currently being developed incrementally. Additional agents, orchestration workflows, and user interface enhancements will be added in upcoming updates.
