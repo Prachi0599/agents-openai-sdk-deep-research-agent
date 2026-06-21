@@ -2,9 +2,22 @@
 
 ## Overview
 
-AI Deep Research Agent is a multi-agent research assistant built using the OpenAI Agents SDK. The system automates the process of researching a topic, gathering information from the web, generating structured reports, and delivering results through an interactive user interface.
+AI Deep Research Agent is a multi-agent research assistant built using the OpenAI Agents SDK, Gradio, and SendGrid.
 
-The project follows a modular multi-agent architecture where each agent is responsible for a specific task in the research workflow.
+The system automates research planning, information gathering, report generation, and email-based report delivery through a modular multi-agent architecture.
+
+Each agent is responsible for a specific stage of the research workflow, enabling scalable and maintainable research automation.
+
+---
+
+## Demo Workflow
+
+1. User enters a research topic.
+2. Planner Agent creates a research strategy.
+3. Search Agent gathers relevant information.
+4. Writer Agent generates a structured report.
+5. Results are displayed through the Gradio interface.
+6. Email Agent can deliver the report to the user.
 
 ---
 
@@ -32,16 +45,148 @@ The project follows a modular multi-agent architecture where each agent is respo
 
 ---
 
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Prachi0599/agents-openai-sdk-deep-research-agent.git
+cd agents-openai-sdk-deep-research-agent
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 3. Activate the Environment
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Linux/macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Configure Environment Variables
+
+Create a '.env' file in the project root:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+SENDGRID_API_KEY=your_sendgrid_api_key
+```
+
+---
+
+## Usage
+
+Run the application:
+
+```bash
+python app/main.py
+```
+
+After launching the application, open the Gradio URL displayed in the terminal.
+
+The workflow is:
+
+1. Enter a research topic
+2. Generate a research plan
+3. Gather information from relevant sources
+4. Create a structured report
+5. Display the results in the interface
+6. Optionally send the report via email
+
+---
+
+## Architecture
+
+```text
+User Query
+    │
+    ▼
+Gradio Interface
+    │
+    ▼
+Research Manager
+    │
+    ├── Planner Agent
+    │       └── Creates research strategy
+    │
+    ├── Search Agent
+    │       └── Gathers information
+    │
+    ├── Writer Agent
+    │       └── Generates report
+    │
+    └── Email Agent
+            └── Sends report via email
+```
+
+---
+
+## Example Use Case
+
+### Research Topic
+
+```text
+Latest trends in AI agents for software development
+```
+
+### System Workflow
+
+* Planner Agent creates a structured research strategy
+* Search Agent gathers relevant information
+* Writer Agent generates a detailed report
+* Email Agent optionally delivers the report to the user
+
+### Output
+
+A comprehensive research report containing:
+
+* Key trends
+* Industry insights
+* Important developments
+* Actionable recommendations
+
+---
+
 ## Project Structure
 
 ```text
 agents_OPENAI_SDK_DEEP_RESEARCH_AGENT/
 │
 ├── app/
+│   ├── __init__.py
+│   └── main.py
+│
 ├── core/
+│   ├── __init__.py
+│   └── research_manager.py
+│
 ├── research_agents/
+│   ├── __init__.py
+│   ├── planner_agent.py
+│   ├── search_agent.py
+│   ├── writer_agent.py
+│   └── email_agent.py
+│
 ├── requirements.txt
 ├── pyproject.toml
+├── uv.lock
 └── README.md
 ```
 
@@ -143,22 +288,31 @@ Together, the Gradio Interface and Email Agent provide the final user-facing lay
 
 ## Current Status
 
-This project is currently being developed incrementally. Additional agents, orchestration workflows, and user interface enhancements will be added in upcoming updates.
+The core implementation of the AI Deep Research Agent is complete.
+
+The project currently supports:
+
+- Multi-agent research workflows
+- Research planning and task decomposition
+- Web information gathering
+- AI-powered report generation
+- Interactive Gradio interface
+- Email-based report delivery
+
+Future updates will focus on improving usability, adding export options, enhancing research quality, and expanding model support.
 
 ---
 
-## Future Improvements
+## License
 
-* Advanced research planning
-* Multi-source information aggregation
-* Citation generation
-* Report export functionality
-* Enhanced user experience
-* Support for additional AI models
+This project is intended for educational and portfolio purposes.
 
 ---
 
 ## Author
 
-Prachi Bhapkar |
+**Prachi Bhapkar**
+
 AI Engineer | Python Developer | Generative AI Enthusiast
+
+GitHub: https://github.com/Prachi0599
